@@ -52,7 +52,7 @@ minima:
 # - about.md
 
 # Build settings
-theme: VikingCatsTheme
+# theme: VikingCatsTheme
 
 plugins:
  - jekyll-feed
