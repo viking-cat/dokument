@@ -55,5 +55,5 @@ minima:
 # theme: VikingCatsTheme
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+# - jekyll-feed
+# - jekyll-seo-tag
