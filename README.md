@@ -1,5 +1,7 @@
 ## Inlägg
 
+Kanske bra med lite demonstrativ text också
+
 <ul>
   {% for post in site.posts %}
     <li>
