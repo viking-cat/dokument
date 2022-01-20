@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
-
 <div class="home">
+    home111
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
-
+  home222
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
 
-
+  home333
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
@@ -37,7 +37,7 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
+    home444
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
@@ -55,7 +55,7 @@ layout: default
         </ul>
       </div>
     {%- endif %}
-
+    home555
   {%- endif -%}
 
 </div>
