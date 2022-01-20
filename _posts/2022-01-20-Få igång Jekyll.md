@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Välkommen till Vikingkattens Dokumentation"
+title: "Välkommen till Vikingkattens Dokumentation"
 ---
 
 # Välkommen
