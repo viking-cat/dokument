@@ -1,10 +1,11 @@
 ---
 layout: page
-title: "Warhammer 40K"
+title: "Jekyll"
 ---
 
 # Documentation
 : [Official Documentation](https://jekyllrb.com/docs/)
+: [Liquid](https://shopify.github.io/liquid/)
 
 # Pages
 : [_pages directory, like _posts directory?](https://github.com/jekyll/jekyll/issues/920)
