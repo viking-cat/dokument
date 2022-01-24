@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Warhammer 40K"
+title: "WH40K"
 ---
 
 : [Dark Angels](https://wahapedia.ru/wh40k9ed/factions/space-marines/dark-angels)

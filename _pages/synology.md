@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Synology NAS"
+title: "Synology"
 ---
 
 : [2022 And Beyond](https://event.synology.com/en-global/annual_event)
