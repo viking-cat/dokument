@@ -3,7 +3,8 @@ layout: page
 title: "Warhammer 40K"
 ---
 
-Lite test text
+: [Dark Angels](https://wahapedia.ru/wh40k9ed/factions/space-marines/dark-angels)
+: [Death Guard](https://wahapedia.ru/wh40k9ed/factions/death-guard/)
 
 # Greenstuff
 
