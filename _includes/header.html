@@ -11,7 +11,7 @@
         {% if page.title %}
           {{ page.title }}
         {% else %}
-          Home
+          Hem
         {% endif %}
       </p>
     </div>
@@ -19,6 +19,7 @@
 
   <section class="navbar is-primary">
     <div class="navbar-menu">
+      <a class="navbar-item"href="{{ my_page.url }}">Hem</a>
       {%- if titles_size > 0 -%}
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
@@ -29,4 +30,5 @@
       {%- endif -%}
     </div>
   </section>
+
 </header>
