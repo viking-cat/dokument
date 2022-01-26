@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Välkommen till Vikingkattens Dokumentation"
+author: "Vikingcat"
 ---
 
 # Välkommen
