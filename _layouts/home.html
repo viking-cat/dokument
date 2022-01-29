@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="home">
+<div class="section">
     {%- if page.title -%}
         <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
@@ -12,6 +12,8 @@ layout: default
         {% assign posts = site.posts %}
     {% endif %}
 
+    <!-- POSTS -->
+
     {%- if posts.size > 0 -%}     
         <section class="section is-medium">
             {% if page.list_title -%}
@@ -21,33 +23,40 @@ layout: default
             {% endif %}
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         
-            {%- for post in posts -%}
-            <div class="card">
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    <div class="content">
-                        <div class="card-content">
-                            <p class="title">{{ post.title | escape }}</p>
-                            <p class="subtitle">{{ post.author | escape }}</p>
-                            {%- if site.show_excerpts -%}
-                                {{ post.excerpt }}      
-                            {%- endif -%}
+            <div style="
+                column-count:3;
+                column-rule-style: solid;
+                column-rule-width: 1px;
+                column-rule-color: black;
+            ">
+                {%- for post in posts -%}
+                <div class="card">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        <div class="content">
+                            <div class="card-content">
+                                <p class="title">{{ post.title | escape }}</p>
+                                <p class="subtitle">{{ post.author | escape }}</p>
+                                {%- if site.show_excerpts -%}
+                                    {{ post.excerpt }}      
+                                {%- endif -%}
+                            </div>
                         </div>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                            <span>
-                                View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                            </span>
-                        </p>
-                        <p class="card-footer-item">
-                            <span>
-                                {{ post.date | date: date_format }}
-                            </span>
-                        </p>
-                    </footer>
-                </a>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                                </span>
+                            </p>
+                            <p class="card-footer-item">
+                                <span>
+                                    {{ post.date | date: date_format }}
+                                </span>
+                            </p>
+                        </footer>
+                    </a>
+                </div>
+                {%- endfor -%}
             </div>
-            {%- endfor -%} 
         </section>
     {%- endif -%}
 
