@@ -1,0 +1,23 @@
+<div class="card">
+    <a class="post-link" href="{{ include.url | relative_url }}">
+        <div class="content">
+            <div class="card-content">
+                <p class="title">{{ include.title | escape }}</p>
+                <p class="subtitle">{{ include.author | escape }}</p>
+                {{ include.excerpt }}
+            </div>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <span>
+                    View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                </span>
+            </p>
+            <p class="card-footer-item">
+                <span>
+                    {{ include.date | date: date_format }}
+                </span>
+            </p>
+        </footer>
+    </a>
+</div>
