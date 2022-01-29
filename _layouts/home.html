@@ -2,7 +2,10 @@
 layout: default
 ---
 HOME START
-<div class="section">
+<section class="section">
+    {{ content }}
+</section>
+<section class="section">
     {%- if page.title -%}
         <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
@@ -16,52 +19,50 @@ HOME START
     <!-- POSTS -->
 
     {%- if posts.size > 0 -%}     
-        <section class="section is-medium">
-            {% if page.list_title -%}
-                {{ page.list_title }}
-            {% else %}
-                <h1 class="title">Posts</h1>
-            {% endif %}
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        
-            <div style="
-                column-count:3;
-                column-rule-style: solid;
-                column-rule-width: 1px;
-                column-rule-color: black;
-            ">
-                {%- for post in posts -%}
-                <div class="card">
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        <div class="content">
-                            <div class="card-content">
-                                <p class="title">{{ post.title | escape }}</p>
-                                <p class="subtitle">{{ post.author | escape }}</p>
-                                {%- if site.show_excerpts -%}
-                                    {{ post.excerpt }}      
-                                {%- endif -%}
-                            </div>
+        {% if page.list_title -%}
+            {{ page.list_title }}
+        {% else %}
+            <h1 class="title">Posts</h1>
+        {% endif %}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    
+        <div style="
+            column-count:3;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: black;
+        ">
+            {%- for post in posts -%}
+            <div class="card">
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    <div class="content">
+                        <div class="card-content">
+                            <p class="title">{{ post.title | escape }}</p>
+                            <p class="subtitle">{{ post.author | escape }}</p>
+                            {%- if site.show_excerpts -%}
+                                {{ post.excerpt }}      
+                            {%- endif -%}
                         </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                                </span>
-                            </p>
-                            <p class="card-footer-item">
-                                <span>
-                                    {{ post.date | date: date_format }}
-                                </span>
-                            </p>
-                        </footer>
-                    </a>
-                </div>
-                {%- endfor -%}
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span>
+                                View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span>
+                                {{ post.date | date: date_format }}
+                            </span>
+                        </p>
+                    </footer>
+                </a>
             </div>
-        </section>
+            {%- endfor -%}
+        </div>
     {%- endif -%}
 
-    PAGES BELOW
+    PAGINATION START
 
     {% if site.paginate %}
         <div class="pager">
@@ -82,5 +83,8 @@ HOME START
             </ul>
         </div>
     {%- endif %}
-</div>
+
+    PAGINATION ENDS
+
+</section>
 HOME ENDS
