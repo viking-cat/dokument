@@ -1,3 +1,20 @@
+/* CSS Override Fixes  */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main Website */
+.has-centered-children {
+    display: flex;
+    align-items: center;
+}
+
+.has-centered-children > * {
+    max-width: 1024px;
+}
+
+/* Testing */
 .testar {
     color: red;
 }
