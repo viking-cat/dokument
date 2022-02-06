@@ -4,11 +4,18 @@
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
   
-  <section class="has-hero-background">
+  <section class=" has-hero-background">
     <p class="is-title"><a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></p>
+    <p class="is-subtitle">
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        Hem
+      {% endif %}
+    </p>
   </section>
 
-  <section class="hero is-small is-info">
+  <!-- <section class="hero is-small is-info">
     <div class="hero-body">
       <p class="is-title"><a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></p>
       <p class="subtitle">
@@ -19,7 +26,7 @@
         {% endif %}
       </p>
     </div>
-  </section>
+  </section> -->
 
   <section class="navbar is-primary">
     <div class="navbar-menu">

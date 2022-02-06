@@ -20,14 +20,8 @@
 
 /* Text */
 
-.is-title {
-    text-transform: uppercase;
-    background-image: linear-gradient(90deg, red, blue);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 24px;
-    font-weight: bold;
+.is-hero {
+    padding: 16px 16px 16px 16px;
 }
 
 .has-hero-background {
@@ -39,6 +33,24 @@
         #BBBBBB 20px
       );
 }
+
+.is-title {
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, white, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.is-subtitle {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 /* Testing */
 
