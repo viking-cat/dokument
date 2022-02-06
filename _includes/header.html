@@ -4,7 +4,7 @@
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
   
-  <section class=" has-hero-background">
+  <section class="is-hero has-hero-background">
     <p class="is-title"><a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></p>
     <p class="is-subtitle">
       {% if page.title %}
