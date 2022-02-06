@@ -16,6 +16,8 @@
     max-width: 1024px;
 }
 
+
+
 /* Text */
 
 .is-title {
@@ -24,6 +26,18 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.has-hero-background {
+    background: repeating-linear-gradient(
+        -55deg,
+        #888888,
+        #888888 10px,
+        #BBBBBB 10px,
+        #BBBBBB 20px
+      );
 }
 
 /* Testing */
