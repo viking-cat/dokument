@@ -8,6 +8,7 @@
 .has-centered-children {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .has-centered-children > * {
