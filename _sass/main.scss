@@ -5,6 +5,7 @@
 }
 
 /* Main Website */
+
 .has-centered-children {
     display: flex;
     align-items: center;
@@ -15,7 +16,17 @@
     max-width: 1024px;
 }
 
+/* Text */
+
+.is-title {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    color: transparent;
+}
+
 /* Testing */
+
 .testar {
     color: red;
 }
