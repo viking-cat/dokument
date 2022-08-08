@@ -1,4 +1,15 @@
+/* Imports */
 @import 'content';
+
+/* Variables */
+
+$color-head: #3A0CA3;
+$color-main: #4361EE;
+$color-foot: #4CC9F0;
+$color-headlines: #7209B7;
+$color-links: #F72585;
+$color-text-bright: #dddddd;
+$color-text-dark: #222222;
 
 /* CSS Override Fixes  */
 
@@ -18,14 +29,14 @@
     max-width: 1024px;
 }
 
-
-
 /* Text */
 
 .is-hero {
     padding: 16px 16px 16px 16px;
+    background-color: $color-head;
 }
 
+/*
 .has-hero-background {
     background: repeating-linear-gradient(
         -55deg,
@@ -35,6 +46,7 @@
         #BBBBBB 20px
       );
 }
+*/
 
 .is-title {
     text-transform: uppercase;
