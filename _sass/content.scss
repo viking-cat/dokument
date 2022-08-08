@@ -1,6 +1,3 @@
-$a-all: 'a, a:active, a:hover, a:visited';
-$a-hover: 'a:active, a:hover';
-
 main {
   background-color:$color-main;
   font-weight: bold;
@@ -49,5 +46,4 @@ main {
     color:$color-headlines;
     font-size: 11px;
   }
-  
 }
