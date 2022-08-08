@@ -1,3 +1,9 @@
+# _config.yml
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Website Settings
 title: "Vikingkattens Dokument"
 author:
   name: GitHub User
