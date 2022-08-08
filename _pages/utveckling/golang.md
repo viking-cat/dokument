@@ -3,8 +3,8 @@ layout: page
 title: "Golang"
 ---
 
-<!--<div style="color:red;column-count:3;">-->
 {% capture capture_links %} 
+
 # Virtualization
 * [Build a super minimalistic Docker Image to run your Golang App](https://dev.to/chseki/build-a-super-minimalistic-docker-image-to-run-your-golang-app-33j0)
 
@@ -21,8 +21,10 @@ title: "Golang"
 
 # Testing
 * [Playground](https://go.dev/play/p/pyKfxKG5FFf)
+
 {% endcapture %}
+
 {% include columns.html cols=2 content=capture_links %}
-<!--<div>-->
+
 
 
