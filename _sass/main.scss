@@ -1,6 +1,3 @@
-/* Imports */
-@import 'content';
-
 /* Variables */
 
 $color-head: #3A0CA3;
@@ -10,6 +7,9 @@ $color-headlines: #7209B7;
 $color-links: #F72585;
 $color-text-bright: #dddddd;
 $color-text-dark: #222222;
+
+/* Imports */
+@import 'content';
 
 /* CSS Override Fixes  */
 
