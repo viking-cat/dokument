@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    {%- include head.html -%}
-    <body 
-        class="has-centered-children"
-        style="height: 100%; background-color: #DDDDDD;">
-        {%- include header.html -%}
-            <main>
-                {{ content }}
-            </main>
-        {%- include footer.html -%}
-    </body>
+  {%- include head.html -%}
+  <body class="has-centered-children">
+      
+    {%- include header.html -%}
+      
+    <main>
+      {{ content }}
+    </main>
+      
+    {%- include footer.html -%}
+      
+  </body>
 </html>
