@@ -1,3 +1,5 @@
+$a-all: 'a, a:active, a:hover, a:visited';
+$a-hover: 'a:active, a:hover';
 
 main {
   background-color:$color-main;
@@ -5,27 +7,46 @@ main {
   color:$color-text-dark;
   width: 100%;
   
+  #{$a-all} {
+    color: $color-links;
+    text-decoration: none;
+  }
+
+  #{$a-hover} {
+    text-decoration: underline overline;
+  }
+  
+  a:visited {
+    text-decoration: underline;
+  }
+  
   h1 {
+    color:$color-headlines;
     font-size: 24px;  
   }
   
   h2 {
+    color:$color-headlines;
     font-size: 18px;
   }
   
   h3 {
+    color:$color-headlines;
     font-size: 16px;
   }
   
   h4 {
+    color:$color-headlines;
     font-size: 14px;
   }
   
   h5 {
+    color:$color-headlines;
     font-size: 12px;
   }
   
   h6 {
+    color:$color-headlines;
     font-size: 11px;
   }
   
