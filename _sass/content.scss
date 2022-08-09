@@ -3,6 +3,7 @@ main {
   font-weight: bold;
   color:$color-text-dark;
   width: 100%;
+  padding: 16px 16px 16px 16px;
   
   #{$a-all} {
     color: $color-links;
