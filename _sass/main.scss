@@ -46,10 +46,14 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-    
+  
   .is-hero {
     padding: 16px 16px 16px 16px;
-    background-color: $color-head;
+    background-color: $color-head-primary;
+  }
+  
+  .navbar {
+    background-color $color-head-secondary;
   }
   
   .is-title {
