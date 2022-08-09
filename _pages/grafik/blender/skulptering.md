@@ -1,5 +1,5 @@
 ---
-parent: "Grafik"
+parent: "Blender"
 layout: page
 title: "Skulptering"
 ---
