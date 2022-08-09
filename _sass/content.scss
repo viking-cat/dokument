@@ -1,6 +1,5 @@
 main {
   background-color:$color-main;
-  font-weight: bold;
   color:$color-text-dark;
   width: 100%;
   padding: 16px 16px 16px 16px;
@@ -19,31 +18,37 @@ main {
   }
   
   h1 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 24px;  
   }
   
   h2 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 18px;
   }
   
   h3 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 16px;
   }
   
   h4 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 14px;
   }
   
   h5 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 12px;
   }
   
   h6 {
+    font-weight: bold;
     color:$color-headlines;
     font-size: 11px;
   }
