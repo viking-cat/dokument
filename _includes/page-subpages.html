@@ -2,11 +2,13 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-<div class="subpages">
+<div class="subpages" markdown="1">
+  
   <div class="subpages-header">
     Undersidor
   </div>
-  <div class="subpages-main">
+  
+  <div class="subpages-main" style="column-count:{{include.cols}};">
     {%- if titles_size > 0 -%}
       {% assign sorted_pages = page_paths | sort: "title" %}
       {%- for path in sorted_pages -%}
@@ -17,4 +19,5 @@
       {%- endfor -%}
     {%- endif -%}
   </div>
+  
 </div>
