@@ -24,7 +24,7 @@ title: "Golang"
 
 {% endcapture %}
 
-{% include columns.html cols=2 content=capture_links %}
+{% include page-columns.html cols=2 content=capture_links %}
 
 
 
