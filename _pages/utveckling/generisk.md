@@ -27,4 +27,4 @@ title: "Generisk"
 * [Jekyll](https://jekyllrb.com/)(***GitHub Pages***)
 
 {% endcapture %}
-{% include columns.html cols=2 content=capture_links %}
+{% include page-columns.html cols=2 content=capture_links %}
