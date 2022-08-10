@@ -26,7 +26,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 ## Remove Scene Contents
 
-<span style="float:right; text-align:right; display:inline-block;">
+<span style="float:right; text-align:right;">
   <img src="/dokument/assets/blender-sculpting-delete_sceen_contents.JPG" alt="Preference Window" width="40%">
 </span>
 
