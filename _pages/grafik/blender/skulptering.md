@@ -8,11 +8,10 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 # Förberedelser
 
-## Addons
-<div style="float:right;">
-  <img src="/dokument/assets/blender-sculpting-preferences-add_ons.JPG" alt="Preference Window">
+## Tillägg
+<div style="float:right;"></div>
+  <img src="/dokument/assets/blender-sculpting-preferences-add_ons.JPG" alt="Preference Window" width="50%" height="50%">
 </div>
-
 * Gå till ***Edit -> Preferences*** i menyn
 * Välj sedan Add-ons i sido menyn till fönstret som öppnas.
 * Sök efter "***extra***"
@@ -20,6 +19,9 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
   * Add Curve: Extra Options
   * Add Mesh: Extra Options
 * Välj slutligen ***Save Preferences***
+<div style="clear:both;"></div>
+
+## Starting Mesh
 
 
 # Base Mesh
@@ -27,3 +29,6 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 # Vektyg
 ...
+
+# Referencer
+* [Blender 2.9 Tutorial - Stylized Character Modeling - Part 1 of 9: Head Blockout & Rough Sculpt](https://youtu.be/UKI8_PAFFz4)
