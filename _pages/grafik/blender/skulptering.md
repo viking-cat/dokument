@@ -26,9 +26,9 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 ## Remove Scene Contents
 
-<span style="float:right; text-align:right;width:400px;">
+<div style="float:right; text-align:right;width:400px;">
   <img src="/dokument/assets/blender-sculpting-delete_sceen_contents.JPG" alt="Preference Window">
-</span>
+</div>
 
 * Go to the top right menu area with the scene contents.
 * Select one or more items, right-click and select delete.
@@ -48,7 +48,11 @@ Försäkra dig om att du är i ***Object Mode*** läget:
 * Välj "***object mode***"
 
 Lägg nu till en rundad kub:
-* sss
+* Tryck *****shift + 1***** för att öppna "Add" menyn
+* Välj "***mesh -> round cube***" för att lägga till en rundad kub
+* Längst ner till vänster finns en öppen eller stängd meny, se till att följande värden är satta:
+  * Radius: 1.00
+  * Arc: 16
 
 <div style="clear:both;"></div>
 
