@@ -9,6 +9,9 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 # Förberedelser
 
 ## Addons
+<div style="float:right;">
+  ![Test image](/dokument/assets/blender-sculpting-preferences-add_ons.JPG)
+</div>
 
 * Gå till ***Edit -> Preferences*** i menyn
 * Välj sedan Add-ons i sido menyn till fönstret som öppnas.
@@ -17,6 +20,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
   * Add Curve: Extra Options
   * Add Mesh: Extra Options
 * Välj slutligen ***Save Preferences***
+
 
 # Base Mesh
 ...
