@@ -26,7 +26,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 ## Remove Scene Contents
 
-<div style="float:right; text-align:right;width:400px;">
+<div style="float:right; text-align:right;width:400px; object-fit:contain;">
   <img src="/dokument/assets/blender-sculpting-delete_sceen_contents.JPG" alt="Preference Window">
 </div>
 
@@ -38,7 +38,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 ## Add Rounded Cube
 
-<span style="float:right; text-align:right; display:inline-block; width:400px;">
+<span style="float:right; text-align:right; display:inline-block; object-fit:contain; width:400px;">
   <img src="/dokument/assets/blender-sculpting-add_rounded_cube.JPG" alt="Preference Window"><br/>
   <img src="/dokument/assets/blender-sculpting-add_rounded_cube-options.JPG" alt="Preference Window">
 </span>
