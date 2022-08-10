@@ -10,7 +10,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 ## Tillägg
 
-<div style="float:right; align:right;">
+<div style="float:right; align:right; text-align:right;">
   <img src="/dokument/assets/blender-sculpting-preferences-add_ons.JPG" alt="Preference Window" width="50%" height="50%">
 </div>
 
