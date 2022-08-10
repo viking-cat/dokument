@@ -24,7 +24,6 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 
 <div style="clear:right;"></div>
 
-
 ## Remove Scene Contents
 
 <div style="float:right; text-align:right;">
@@ -35,8 +34,7 @@ Blender har ett skulpterings läge som påminner mycket om ZBrush. Blender är d
 * Select one or more items, right-click and select delete.
 * Repeat if necessary until everything has been removed.
 
-<div style="clear:right;"></div>
-
+<div style="clear:both;"></div>
 
 ## Add Rounded Cube
 
@@ -52,8 +50,7 @@ Försäkra dig om att du är i ***Object Mode*** läget:
 Lägg nu till en rundad kub:
 * sss
 
-<div style="clear:right;"></div>
-
+<div style="clear:both;"></div>
 
 # Vektyg
 ...
