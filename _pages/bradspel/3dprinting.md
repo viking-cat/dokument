@@ -1,4 +1,6 @@
 ---
+top: false
+parent: "Brädspel"
 layout: page
 title: "3D Printing"
 ---
