@@ -3,20 +3,20 @@ layout: page
 title: "OpenShift"
 ---
 
-== Installation ==
+# Installation
 
-=== Docker Desktop ===
+## Docker Desktop
 
 Installera [Docker Desktop](https://www.docker.com/) på datorn.
 
-=== Openshift ===
+## Openshift
 
-Installera sedan 
+1. Register at [RedHat](https://www.redhat.com/)
+2. Start a sandbox at [Openshift Sandbox](https://developers.redhat.com/developer-sandbox) (30-day limited)
 
 
 
-
-== Annat ===
+# Annat
 
 [Minishift](https://github.com/minishift/minishift)
 
