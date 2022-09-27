@@ -38,6 +38,19 @@ Test the installation by opening PowerShell and run the "oc" command.
 
 You should get a lot of OpenShift information inside the PowerShell terminal.
 
+### Login to OpenShift with CLI
+
+1. On the OpenShift Apps page
+2. Click you username in the top right corner
+3. Select "Copy Login Command"
+4. A new window will open and you have to login again by clicking the "DevSandbox" button
+5. An empty page with the "Display Token" is displayed
+6. Click "Display Token"
+7. Copy the long text starting with "OC login" below "Login with this token"
+8. Go to your powershell terminal and paste it in, then press enter
+
+You should see information about Logged in with... and one or more projects being mentioned and one is already selected for you.
+
 # Annat
 
 [Minishift](https://github.com/minishift/minishift)
