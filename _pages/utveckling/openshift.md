@@ -22,11 +22,21 @@ Installera [Docker Desktop](https://www.docker.com/) på datorn.
     7. On the new page, select Login with "DevSandbox"
     8. You might get one or more pages with more stuff you need to confirm
 
-
 Might be possible to easily return with the [OpenShift Apps](https://openshiftapps.com) link
  
+### OC CLI
 
+1. Click the "question mark" in the top right corner, next to your user name
+2. Select "Command Line Tools" from the dropdown
+3. Download the "Download oc for Windows for x86_64"
+4. Extract the "oz.zip" file
+5. Copy the "oc.exe" file to a permanent folder like "c:\users\abc123\oc-folder"
+6. Append the "c:\users\abc123\oc-folder" to the PATH environment variable of the system
+7. Click OK button on each window to close them
 
+Test the installation by opening PowerShell and run the "oc" command.
+
+You should get a lot of OpenShift information inside the PowerShell terminal.
 
 # Annat
 
