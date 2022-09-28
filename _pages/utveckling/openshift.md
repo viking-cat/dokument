@@ -71,6 +71,7 @@ $ oc create -f &#60;yaml&#62;                                       Creates pod 
 $ oc get pods                                               Get information about PODs
 $ oc rsh &#60;pod&#62;                                              Open shell into POD
     exit                                                        Type exit inside shell to leave the PODs shell
+$ oc delete pod &#60;pod&#62;                               Removes POD
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
