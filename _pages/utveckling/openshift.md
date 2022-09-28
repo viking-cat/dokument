@@ -54,20 +54,28 @@ You should see information about Logged in with... and one or more projects bein
 # Commands
 
 <pre>
+# Users
+$ oc login -u &#60;username&#62;                                    Attempts to login with the named user
+$ oc login --token=&#60;token&#62; --server=&#60;address:port&#62;              Login with token to server
+$ oc logout                                                 Logs out current user
+$ oc whoami                                                 Shows the current user
+
 # Projects
-$ oc projects                                                       Lists all projects
+$ oc projects                                               Lists all projects
 $ oc project &#60;name&#62;                                         Switch to named project
 $ oc new-project &#60;name&#62;                                     Creates a new project
 
-# Users
-$ oc whoami                                                         Shows the current user
-$ oc login -u &#60;username&#62;                                    Attempts to login with the named user
-$ oc login --token=&#60;token&#62; --server=&#60;address:port&#62;  Login with token to server
-$ oc logout                                                         Logs out current user
+# Pods
+$ 
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
-$ oc delete all -all                                                Complete cleanup
+$ oc delete all -all                                        Complete cleanup
+
+# Help
+$ oc help                                                   Basic commands
+$ oc explain &#60;thing&#62;                                        Explains about the "thing", ex $ oc explain pod
+$ oc explain &#60;thing&#62;.&#60;detail&#62;                                Explains more about the "detail" of the "thing", ex $ oc explain pod.spec
 </pre>
 
 # Annat
