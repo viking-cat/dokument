@@ -67,11 +67,13 @@ $ oc new-project &#60;name&#62;                                     Creates a ne
 
 # Pods
 $ oc status                                                 The status of OpenShift right now
-$ oc create -f &#60;yaml&#62;                                       Creates pod based on local yaml file
 $ oc get pods                                               Get information about PODs
+$ oc create -f &#60;yaml&#62;                                       Creates pod based on local yaml file
+$ oc delete pod &#60;pod&#62;                                           Removes POD
 $ oc rsh &#60;pod&#62;                                              Open shell into POD
     exit                                                        Type exit inside shell to leave the PODs shell
-$ oc delete pod &#60;pod&#62;                               Removes POD
+$ oc get pods --watch                                       See live in another terminal how the state of pods changes
+
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
