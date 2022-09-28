@@ -69,6 +69,10 @@ You should see information about Logged in with... and one or more projects bein
             <td>$ oc new-project <name></td><td>Creates a new project</td>
             <td>$ oc delete <name></td><td>Deletes named resource like pod, container, file etc</td>
         </tr>
+        <tr>
+            <td>$ oc delete all -all</td><td>Complete cleanup</td>
+            <td></td><td></td>
+        </tr>
     </tbody>
 </table>
 
