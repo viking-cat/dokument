@@ -62,16 +62,16 @@ You should see information about Logged in with... and one or more projects bein
     </thead>
     <tbody>
         <tr>
-            <td>$ oc projects</td><td>Lists all projects</td>
-            <td>$ oc project \<name\></td><td>Switch to named project</td>
+            <td> $ oc projects </td><td>Lists all projects </td>
+            <td> $ oc project \<name\> </td><td>Switch to named project </td>
         </tr>
         <tr>
-            <td>$ oc new-project \<name\></td><td>Creates a new project</td>
-            <td>$ oc delete \<name\></td><td>Deletes named resource like pod, container, file etc</td>
+            <td> $ oc new-project \<name\> </td><td> Creates a new project </td>
+            <td> $ oc delete \<name\> </td><td> Deletes named resource like pod, container, file etc </td>
         </tr>
         <tr>
-            <td>$ oc delete all -all</td><td>Complete cleanup</td>
-            <td></td><td></td>
+            <td> $ oc delete all -all </td><td> Complete cleanup </td>
+            <td> ... </td> <td> ... </td>
         </tr>
     </tbody>
 </table>
