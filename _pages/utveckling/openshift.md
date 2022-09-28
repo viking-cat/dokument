@@ -51,6 +51,18 @@ You should get a lot of OpenShift information inside the PowerShell terminal.
 
 You should see information about Logged in with... and one or more projects being mentioned and one is already selected for you.
 
+# Commands
+
+<table>
+    <tr>
+        <th>Command</th><th>Notes</th>
+        <th>Command</th><th>Notes</th>
+    </tr>
+    <tr>
+        <td>$ oc projects</td><td>Lists all projects</td>
+        <td>$ oc project <name></td><td>Switch to named project</td>
+    </tr>
+</table>
 # Annat
 
 [Minishift](https://github.com/minishift/minishift)
