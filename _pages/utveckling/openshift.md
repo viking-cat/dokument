@@ -65,6 +65,9 @@ $ oc projects                                               Lists all projects
 $ oc project &#60;name&#62;                                         Switch to named project
 $ oc new-project &#60;name&#62;                                     Creates a new project
 
+# Deployments
+$ oc new-app &#60;address&#62; --as-deployment-config               Launch deployment config, ex
+                                                            oc new-app quay.io/practicalopenshift/hello-world --as-deployment-config
 # Pods
 $ oc status                                                 The status of OpenShift right now
 $ oc get pods                                               Get information about PODs
@@ -73,6 +76,7 @@ $ oc delete pod &#60;pod&#62;                                           Removes 
 $ oc rsh &#60;pod&#62;                                              Open shell into POD
     exit                                                        Type exit inside shell to leave the PODs shell
 $ oc get pods --watch                                       See live in another terminal how the state of pods changes
+
 
 
 # Resources
