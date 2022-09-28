@@ -60,6 +60,10 @@ main {
     font-size: 11px;
   }
   
+  pre {
+    font-family: monospace;
+  }
+  
   hr {
     border-top: 1px solid $color-headlines;
   }
