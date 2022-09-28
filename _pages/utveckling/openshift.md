@@ -54,11 +54,19 @@ You should see information about Logged in with... and one or more projects bein
 # Commands
 
 <pre>
+# Projects
 $ oc projects               Lists all projects
 $ oc project <name>         Switch to named project
 $ oc new-project <name>     Creates a new project
+
+# Users
+$ oc whoami                 Shows the current user
+
+# Resources
 $ oc delete <name>          Deletes named resource like pod, container, file etc
 $ oc delete all -all        Complete cleanup
+
+
 </pre>
 
 # Annat
