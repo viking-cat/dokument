@@ -54,15 +54,24 @@ You should see information about Logged in with... and one or more projects bein
 # Commands
 
 <table>
-    <tr>
-        <th>Command</th><th>Notes</th>
-        <th>Command</th><th>Notes</th>
-    </tr>
-    <tr>
-        <td>$ oc projects</td><td>Lists all projects</td>
-        <td>$ oc project <name></td><td>Switch to named project</td>
-    </tr>
+    <thead>
+        <tr>
+            <th>Command</th><th>Notes</th>
+            <th>Command</th><th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>$ oc projects</td><td>Lists all projects</td>
+            <td>$ oc project <name></td><td>Switch to named project</td>
+        </tr>
+        <tr>
+            <td>$ oc new-project <name></td><td>Creates a new project</td>
+            <td>$ oc delete <name></td><td>Deletes named resource like pod, container, file etc</td>
+        </tr>
+    </tbody>
 </table>
+
 # Annat
 
 [Minishift](https://github.com/minishift/minishift)
