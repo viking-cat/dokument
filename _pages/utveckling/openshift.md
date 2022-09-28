@@ -55,21 +55,19 @@ You should see information about Logged in with... and one or more projects bein
 
 <pre>
 # Projects
-$ oc projects                                       Lists all projects
-$ oc project <name>                                 Switch to named project
-$ oc new-project <name>                             Creates a new project
+$ oc projects                                                       Lists all projects
+$ oc project &#60;name&#62;                                         Switch to named project
+$ oc new-project &#60;name&#62;                                     Creates a new project
 
 # Users
-$ oc whoami                                         Shows the current user
-$ oc login -u <username>                            Attempts to login with the named user
-$ oc login --token=<token> --server=<address:port>  Login with token to server
-$ oc logout                                         Logs out current user
+$ oc whoami                                                         Shows the current user
+$ oc login -u &#60;username&#62;                                    Attempts to login with the named user
+$ oc login --token=&#60;token&#62; --server=&#60;address:port&#62;  Login with token to server
+$ oc logout                                                         Logs out current user
 
 # Resources
-$ oc delete <name>                                  Deletes named resource like pod, container, file etc
-$ oc delete all -all                                Complete cleanup
-
-
+$ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
+$ oc delete all -all                                                Complete cleanup
 </pre>
 
 # Annat
