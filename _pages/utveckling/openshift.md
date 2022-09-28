@@ -53,28 +53,13 @@ You should see information about Logged in with... and one or more projects bein
 
 # Commands
 
-<table>
-    <thead>
-        <tr>
-            <th>Command</th><th>Notes</th>
-            <th>Command</th><th>Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> $ oc projects </td><td>Lists all projects </td>
-            <td> $ oc project \<name\> </td><td>Switch to named project </td>
-        </tr>
-        <tr>
-            <td> $ oc new-project \<name\> </td><td> Creates a new project </td>
-            <td> $ oc delete \<name\> </td><td> Deletes named resource like pod, container, file etc </td>
-        </tr>
-        <tr>
-            <td> $ oc delete all -all </td><td> Complete cleanup </td>
-            <td> ... </td> <td> ... </td>
-        </tr>
-    </tbody>
-</table>
+<pre>
+$ oc projects               Lists all projects
+$ oc project <name>         Switch to named project
+$ oc new-project <name>     Creates a new project
+$ oc delete <name>          Deletes named resource like pod, container, file etc
+$ oc delete all -all        Complete cleanup
+</pre>
 
 # Annat
 
