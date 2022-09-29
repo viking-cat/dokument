@@ -78,9 +78,14 @@ $ oc delete dc/hello-world                                  Remove the deploymen
 $ oc describe dc/hello-world                                Get information about the hello-world decployment config
 $ oc delete all -l app=hello-world                          Delete all resources with the "app=hello-world" label (-l argument)
                                                             Recommended cleanup method
+$ oc get -o yaml dc/hello-world                             See YAML for deployment config
+$ oc rollout latest dc/hello-world                          Rollout new version of deployment config (upgrade)
+$ oc rollback dc/hello-world                                Rollback one deployment config version backwards (downgrade)
 
 # Services
+$ oc explain svc                                            Service documentation
 $ oc get svc                                                Get services
+$ oc expose --port 8080 pod/hello-world-pod                 Exposes POD inside the OC cluster (not externally accessible)
 $ oc delete svc/hello-world                                 Removes the hello-world service
 
 # Pods
@@ -90,9 +95,13 @@ $ oc create -f &#60;yaml&#62;                                       Creates pod 
 $ oc delete pod &#60;pod&#62;                                           Removes POD
 $ oc rsh &#60;pod&#62;                                              Open shell into POD
     exit                                                        Type exit inside shell to leave the PODs shell
+    env                                                         See all environment variables (IP etc)
 $ oc get pods --watch                                       See live in another terminal how the state of pods changes
 
+    
 
+# Replication Controller
+$ oc get rc                                                 See replication controllers
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
