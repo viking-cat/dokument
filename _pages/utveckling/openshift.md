@@ -68,8 +68,10 @@ $ oc new-project &#60;name&#62;                                     Creates a ne
 # Deployments
 $ oc new-app &#60;address&#62; --as-deployment-config               Launch deployment config, ex
                                                             oc new-app quay.io/practicalopenshift/hello-world --as-deployment-config
-$oc new-app &#60;address&#62; --name demo-app --as-deployment-config    Change label from "app=hello-world" to "app=demo-app"
+                                                            Address can also point at a git repository and will automaticall trigger a build in that case
+$ oc new-app &#60;address&#62; --name demo-app --as-deployment-config    Change label from "app=hello-world" to "app=demo-app"
                                                             Changing label allows for multiple deployments of same thing that can be created and deleted separately
+    $ oc logs -f buildconfig/hello-world                    Follow the build process
 $ oc get dc                                                 Get deployment configs
 $ oc get istag                                              Get image stream tags
 $ oc delete dc/hello-world                                  Remove the deployment config named hello-world
