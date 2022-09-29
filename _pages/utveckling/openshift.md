@@ -68,9 +68,14 @@ $ oc new-project &#60;name&#62;                                     Creates a ne
 # Deployments
 $ oc new-app &#60;address&#62; --as-deployment-config               Launch deployment config, ex
                                                             oc new-app quay.io/practicalopenshift/hello-world --as-deployment-config
+$oc new-app &#60;address&#62; --name demo-app --as-deployment-config    Change label from "app=hello-world" to "app=demo-app"
+                                                            Changing label allows for multiple deployments of same thing that can be created and deleted separately
 $ oc get dc                                                 Get deployment configs
 $ oc get istag                                              Get image stream tags
 $ oc delete dc/hello-world                                  Remove the deployment config named hello-world
+$ oc describe dc/hello-world                                Get information about the hello-world decployment config
+$ oc delete all -l app=hello-world                          Delete all resources with the "app=hello-world" label (-l argument)
+                                                            Recommended cleanup method
 
 # Services
 $ oc get svc                                                Get services
