@@ -3,9 +3,9 @@ layout: page
 title: "Helm"
 ---
 
-== What is helm ==
+# What is helm
 
-== How to work with helm ==
+# How to work with helm
 
 <pre>
 $ helm list                           List the helm charts currently in use
