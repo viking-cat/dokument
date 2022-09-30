@@ -67,9 +67,17 @@ $ oc project &#60;name&#62;                                         Switch to na
 $ oc new-project &#60;name&#62;                                     Creates a new project
 
 # Config Maps
+$ oc get cm                                                 Lists all config maps
+$ oc get configmap                                          Lists all config maps
 $ oc explain configmap                                      Documentation about config maps
 $ oc create configmap message-map &#60;arguments&#62;               Create a configmap called "message-map" in templates folder with arguments, ex:
                                                             oc create configmap message-map --from-literal MESSAGE="Hello from configmap"
+$ oc create configmap file-map --from-file=&#60;arguments&#62;      Creates a configmap called "file-map" from file
+                                                            oc create configmap file-map --from-file=MESSAGE.txt
+$ oc create configmap pods-example --from-file &#60;folder&#62;             Creates a configmap called "pods-example" from folder
+                                                            oc create configmap pods-example --from-file pods
+$ oc get -o yaml cm/message-map                             See contents of configmap
+$ oc set env dc/hello-world --from cm/message-map           "Consume" config map, or simply apply config map on to hello-world deployment
 
 
 # Deployments
