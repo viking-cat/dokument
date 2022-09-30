@@ -1,0 +1,10 @@
+---
+layout: page
+title: "OpenShift Training"
+---
+
+<pre>
+$ helm list           List the helm charts
+</pre>
+
+{% include page-columns.html cols=2 content=capture_links %}
