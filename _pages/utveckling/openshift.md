@@ -60,10 +60,17 @@ $ oc login --token=&#60;token&#62; --server=&#60;address:port&#62;          Logi
 $ oc logout                                                 Logs out current user
 $ oc whoami                                                 Shows the current user
 
+
 # Projects
 $ oc projects                                               Lists all projects
 $ oc project &#60;name&#62;                                         Switch to named project
 $ oc new-project &#60;name&#62;                                     Creates a new project
+
+# Config Maps
+$ oc explain configmap                                      Documentation about config maps
+$ oc create configmap message-map &#60;arguments&#62;               Create a configmap called "message-map" in templates folder with arguments, ex:
+                                                            oc create configmap message-map --from-literal MESSAGE="Hello from configmap"
+
 
 # Deployments
 $ oc new-app &#60;address&#62; --as-deployment-config               Launch deployment config, ex
@@ -82,11 +89,14 @@ $ oc get -o yaml dc/hello-world                             See YAML for deploym
 $ oc rollout latest dc/hello-world                          Rollout new version of deployment config (upgrade)
 $ oc rollback dc/hello-world                                Rollback one deployment config version backwards (downgrade)
 
+
 # Services
 $ oc explain svc                                            Service documentation
 $ oc get svc                                                Get services
 $ oc expose --port 8080 pod/hello-world-pod                 Exposes POD inside the OC cluster (not externally accessible)
+$ oc expose svc/hello-world                                 Expose hello world PODs service externally, use OC Status to see generated address
 $ oc delete svc/hello-world                                 Removes the hello-world service
+
 
 # Pods
 $ oc status                                                 The status of OpenShift right now
@@ -98,10 +108,10 @@ $ oc rsh &#60;pod&#62;                                              Open shell i
     env                                                         See all environment variables (IP etc)
 $ oc get pods --watch                                       See live in another terminal how the state of pods changes
 
-    
 
 # Replication Controller
 $ oc get rc                                                 See replication controllers
+
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
