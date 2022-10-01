@@ -1,4 +1,6 @@
 ---
+top: false
+parent: "virtualisering"
 layout: page
 title: "OpenShift Training"
 ---
