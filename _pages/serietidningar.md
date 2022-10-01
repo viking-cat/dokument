@@ -1,4 +1,5 @@
 ---
+top: true
 layout: page
 title: "Serietidningar"
 ---
