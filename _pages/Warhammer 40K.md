@@ -1,4 +1,6 @@
 ---
+top: false
+parent: "brädspel"
 layout: page
 title: "WH40K"
 ---
