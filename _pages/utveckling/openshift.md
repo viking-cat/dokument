@@ -74,7 +74,7 @@ $ oc create configmap message-map &#60;arguments&#62;               Create a con
                                                             oc create configmap message-map --from-literal MESSAGE="Hello from configmap"
 $ oc create configmap file-map --from-file=&#60;arguments&#62;      Creates a configmap called "file-map" from file
                                                             oc create configmap file-map --from-file=MESSAGE.txt
-$ oc create configmap pods-example --from-file &#60;folder&#62;             Creates a configmap called "pods-example" from folder
+$ oc create configmap pods-example --from-file &#60;folder&#62;     Creates a configmap called "pods-example" from folder
                                                             oc create configmap pods-example --from-file pods
 $ oc get -o yaml cm/message-map                             See contents of configmap
 $ oc set env dc/hello-world --from cm/message-map           "Consume" config map, or simply apply config map on to hello-world deployment
@@ -115,6 +115,14 @@ $ oc rsh &#60;pod&#62;                                              Open shell i
     exit                                                        Type exit inside shell to leave the PODs shell
     env                                                         See all environment variables (IP etc)
 $ oc get pods --watch                                       See live in another terminal how the state of pods changes
+
+
+# Secrets
+$ oc get secret                                             List all secrets
+$ oc create secret &#60;pod&#62; &#60;name&#62; --from-literal &#60;key value pair&#62;                     Creates a secret of "type" with "name", followed by "key-value-pair", example:
+                                                            oc create secret generic message-secret --from-literal MESSAGE="Secret Message"
+$ oc get -o yaml secret/message-secret                      Inspect secret with name "message-secret"
+$ oc set env dc/hello-world --from secret/message-secret    Update dc/hello world with secret (which contained MESSAGE="Secret Message") this will overwrite old MESSAGE
 
 
 # Replication Controller
