@@ -1,4 +1,6 @@
 ---
+top:false
+parent: "mjukvara"
 layout: page
 title: "Blender"
 ---
