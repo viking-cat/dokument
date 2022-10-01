@@ -5,7 +5,7 @@ title: "Helm"
 
 # What is helm
 
-# How to work with helm
+# Helm Cheat Sheet
 
 <pre>
 $ helm list                           List the helm charts currently in use
