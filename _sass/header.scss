@@ -1,0 +1,32 @@
+header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    
+    .is-hero {
+      padding: 16px 16px 16px 16px;
+      background-color: $color-head-primary;
+      }
+    
+    .navbar {
+      background-color: $color-head-secondary;
+      padding: 16px 16px 16px 16px;
+
+      a {
+        margin-right: 8px;
+      }
+
+      a:last-of-type {
+        margin-right: 0px;
+      }
+
+      }
+    
+    .is-title {
+      font-size: 36px;
+      }
+  
+    .is-subtitle {
+      font-size: 24px;
+      }
+  }

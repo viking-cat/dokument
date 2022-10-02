@@ -1,6 +1,7 @@
 /* Imports */
 @import 'standard';
 @import 'colors';
+@import 'header';
 @import 'content';
 @import 'footer';
 
@@ -43,28 +44,7 @@ header, footer {
 
 /* Text */
 
-header {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  
-  .is-hero {
-    padding: 16px 16px 16px 16px;
-    background-color: $color-head-primary;
-    }
-  
-  .navbar {
-    background-color: $color-head-secondary;
-    }
-  
-  .is-title {
-    font-size: 36px;
-    }
 
-  .is-subtitle {
-    font-size: 24px;
-    }
-}
 
 /* Testing */
 
