@@ -89,6 +89,7 @@ $ oc new-app &#60;address&#62; --as-deployment-config               Launch deplo
 $ oc new-app &#60;address&#62; --name demo-app --as-deployment-config    Change label from "app=hello-world" to "app=demo-app"
                                                             Changing label allows for multiple deployments of same thing that can be created and deleted separately
     $ oc logs -f buildconfig/hello-world                    Follow the build process
+$ oc new-app myproject/hello-world --as-deployment-config   Now creates DC from existing image steam instead of remote
 $ oc get dc                                                 Get deployment configs
 $ oc get istag                                              Get image stream tags
 $ oc delete dc/hello-world                                  Remove the deployment config named hello-world
@@ -130,11 +131,30 @@ $ oc set env dc/hello-world --from secret/message-secret    Update dc/hello worl
 # Replication Controller
 $ oc get rc                                                 See replication controllers
 
+# Builds & Buildconfig
+$ oc get build                                              List all the builds (builds runs in pods)
+$ oc new-build &#60;address&#62;                            Builds an image from "source", detailed example command below:
+                                                            oc new-build https://gitlab.com/practical-openshift/hello-world.git
+$ oc get -o yaml buildconfig/hello-world                    See the content of the buildconfig for hello-world
+
+
+# Image Streams & Tags
+$ oc get is                                                 See image streams
+$ oc import-image &#60;image path&#62;                              Adds an image stream, see example below:
+                                                            oc import-image --confirm quay.io/practicalopenshift/hello-world
+                                                            **output mentions "local" can it use something from drive?**
+                                                            oc new-app myproject/hello-world --as-deployment-config
+                                                            Now creates DC from existing image steam instead of remote 
+$ oc delte is/hello-world                                   Delete an image stream
+$ oc get istag                                              See image stream tags
+$ oc describe istag/hello-world:latest
+$ oc tag &#60;old&#62; &#60;new&#62;                                        Create a new tag for resource
+                                                            oc tag quay.io/image-name:tag image-name:tag
+
 
 # Resources
 $ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
 $ oc delete all -all                                        Complete cleanup
-
 
 # Help
 $ oc help                                                   Basic commands
