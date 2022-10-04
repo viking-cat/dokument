@@ -67,6 +67,7 @@ $ oc whoami                                                 Shows the current us
 $ oc projects                                               Lists all projects
 $ oc project &#60;name&#62;                                         Switch to named project
 $ oc new-project &#60;name&#62;                                     Creates a new project
+$ oc describe project/&#60;name&#62;                                Get detailed informaiton about project
 
 # Config Maps
 $ oc get cm                                                 Lists all config maps
@@ -100,6 +101,15 @@ $ oc get -o yaml dc/hello-world                             See YAML for deploym
 $ oc rollout latest dc/hello-world                          Rollout new version of deployment config (upgrade)
 $ oc rollback dc/hello-world                                Rollback one deployment config version backwards (downgrade)
 
+$ oc set triggers dc/hello-world                            Outputs the triggers... (?)
+$ oc set triggers dc/hello-world --remove --from-config     Removes the "from-config" trigger from deployment config
+$ oc set triggers dc/hello-world --from-config              Adds the "from-config" trigger to the deployment config
+$ oc set triggers dc/hello-world --remove --from-image hello-world:latest           Removes the "from-image" trigger from deployment config
+$ oc set triggers dc/hello-world --from-image hello-world:latest -c hello-world     Adds the "from-image" trigger to the deployment config for container...(?)
+$ oc set deployment-hook dc/hello-world --pre -c hello-world -- /bin/echo Hello from hook   Adds a pre deployment hook
+$ oc get events                                             To find and see pre-hook output
+$ oc set probe dc/hello-world --liveness --open-tcp=8080    Sets a probe that tries to connect to port 8080 to verify that it is alive
+
 
 # Services
 $ oc explain svc                                            Service documentation
@@ -114,6 +124,8 @@ $ oc status                                                 The status of OpenSh
 $ oc get pods                                               Get information about PODs
 $ oc create -f &#60;yaml&#62;                                       Creates pod based on local yaml file
 $ oc delete pod &#60;pod&#62;                                           Removes POD
+$ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
+$ oc delete all -all                                        Complete cleanup
 $ oc rsh &#60;pod&#62;                                              Open shell into POD
     exit                                                        Type exit inside shell to leave the PODs shell
     env                                                         See all environment variables (IP etc)
@@ -131,15 +143,21 @@ $ oc set env dc/hello-world --from secret/message-secret    Update dc/hello worl
 # Replication Controller
 $ oc get rc                                                 See replication controllers
 
+
 # Builds & Buildconfig
+$ oc start-build bc/hello-world                             Start a build (happens in pods so oc get pods --watch can be used for a bit of info)
+$ oc cancel-build bc/hello-world                            Cancels an ongoing build
 $ oc get build                                              List all the builds (builds runs in pods)
+$ oc logs -f build/hello-world-1                            See the log of a specific build (get build to find names of builds)
 $ oc new-build &#60;address&#62;                            Builds an image from "source", detailed example command below:
                                                             oc new-build https://gitlab.com/practical-openshift/hello-world.git
+$ oc get buildconfig                                        List the buildconfigs
+$ oc logs -f buildconfig/hello-world                        See the log of a specific buildconfig
 $ oc get -o yaml buildconfig/hello-world                    See the content of the buildconfig for hello-world
-
 
 # Image Streams & Tags
 $ oc get is                                                 See image streams
+$ oc describe is/hello-world                                Inspect image stream
 $ oc import-image &#60;image path&#62;                              Adds an image stream, see example below:
                                                             oc import-image --confirm quay.io/practicalopenshift/hello-world
                                                             **output mentions "local" can it use something from drive?**
@@ -152,9 +170,18 @@ $ oc tag &#60;old&#62; &#60;new&#62;                                        Crea
                                                             oc tag quay.io/image-name:tag image-name:tag
 
 
-# Resources
-$ oc delete &#60;name&#62;                                          Deletes named resource like pod, container, file etc
-$ oc delete all -all                                        Complete cleanup
+# Volumes
+$ oc describe cm/cm-volume
+$ oc set volume dc/hello-world --add --mount-path /empty-dir-demo --type emptyDir       This creates a volume of emptyDir type
+$ oc create configmap cm-volume --from-literal file.txt="CM File Contents"              Step 1: Create configmap
+$ oc set volume dc/hello-world --add --mount-path /cm-dir --configmap-name cm-volume    Step 2: Mounts configmap as volume
+
+
+# Scaling
+$ oc scale dc/hello-world --replicas 3                              Sets how many identical pods should run in the ... namespace (?)
+$ oc autoscale dc/hello-world --min 1 --max 10 --cpu-percent 80     
+$ oc get hpa                                                        HPA = Horizontal Pod Autoscale
+
 
 # Help
 $ oc help                                                   Basic commands
