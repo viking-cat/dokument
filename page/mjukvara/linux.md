@@ -11,7 +11,7 @@ For moments with lack of memory
 <pre>
 # Searching
 $ find . -iname &#60;query&#62;                         Look for files that fulfills "query" starting with current folder.
-                                                        Query like "*item*" would return all files that contain the word item somewhere in the name.
+                                                Query like "*item*" would return all files that contain the word item somewhere in the name.
 
 
 Compressing Files
