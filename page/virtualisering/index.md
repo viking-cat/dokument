@@ -5,7 +5,6 @@ title: "Virtualisering"
 ---
 
 # Docker
-
 : [Create Docker Image](https://www.sentinelone.com/blog/create-docker-image/)
 : [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 
